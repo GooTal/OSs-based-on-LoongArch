@@ -1,6 +1,6 @@
 本文档整理了龙芯平台嵌入式和教学OS资料，更多龙芯平台OS或软件发行动态见[社区](https://preview.loongarch.dev/33/zh-cn/posts/2022year/)。
 
-# mit xv6(开发中)
+# mit xv6-实验和参考书(开发中)
 
 xv6是MIT在2006年开发的一个类Unix教学操作系统，与Linux或BSD不同，xv6非常简单，足以在一个学期内讲完，但仍包含Unix的重要概念和组织结构。
 
@@ -11,8 +11,20 @@ xv6是MIT在2006年开发的一个类Unix教学操作系统，与Linux或BSD不�
 **主要特性：**
 
 * 基于v2.0 ABI的新世界系统
-* 仓库含实验指导书和PPT演示资料
-* 支持utils，syscall，pgtbl，trap，cow，thread，mmap实验
+* 仓库含OS代码、实验代码、实验指导书和PPT演示资料
+* 实验的具体实现，参考邓老师的[仓库](https://github.com/Fan33oo/xv6-labs-loongarch)
+
+# mit xv6-参考实现(开发中)
+
+本项目是罗老师[基于LoongArch构建xv6实验](https://github.com/skt-cpuos/xv6-loongarch-exp)的参考实现。
+
+**实现者：** 邓老师
+
+**仓库地址：** https://github.com/Fan33oo/xv6-labs-loongarch
+
+**主要特性：**
+
+* 完成utils，syscall，pgtbl，trap，cow，thread，mmap实验
 * net实验，pci设备支持，有待完善
 * lock实验，龙芯qemu还不支持多核
 * fs实验，龙芯qemu内存限制，有待完善
